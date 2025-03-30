@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kill The King - The Ultimate Royal Battle Game | 杀死国王</title>
+    <meta name="description" content="Challenge yourself in Kill The King, an epic royal battle where your skills determine the fate of the kingdom. Play now online for free!">
+    <link rel="canonical" href="https://杀死国王.online" />
+    <meta name="keywords" content="Kill The King, 杀死国王, online game, royal battle, king game, strategy game">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Apple-specific meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Kill The King">
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Kill The King - Royal Battle Game">
+    <meta property="og:description" content="Challenge yourself in Kill The King, an epic royal battle where your skills determine the fate of the kingdom.">
+    <meta property="og:url" content="https://杀死国王.online">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://杀死国王.online/images/og-image.jpg">
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kill The King - Royal Battle Game">
+    <meta name="twitter:description" content="Challenge yourself in Kill The King, an epic royal battle where your skills determine the fate of the kingdom.">
+    <meta name="twitter:image" content="https://杀死国王.online/images/twitter-image.jpg">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apple-blue': '#007AFF',
+                        'apple-green': '#34C759',
+                        'apple-indigo': '#5856D6',
+                        'apple-orange': '#FF9500',
+                        'apple-pink': '#FF2D55',
+                        'apple-purple': '#AF52DE',
+                        'apple-red': '#FF3B30',
+                        'apple-teal': '#5AC8FA',
+                        'apple-yellow': '#FFCC00',
+                        'apple-gray': '#8E8E93',
+                        'apple-gray2': '#AEAEB2',
+                        'apple-gray3': '#C7C7CC',
+                        'apple-gray4': '#D1D1D6',
+                        'apple-gray5': '#E5E5EA',
+                        'apple-gray6': '#F2F2F7',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Additional custom styles */
+        .game-container {
+            aspect-ratio: 16/9;
+            max-height: 80vh;
+        }
+        
+        @media (max-width: 768px) {
+            .game-container {
+                aspect-ratio: 4/3;
+            }
+        }
+        
+        .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: .5;
+            }
+        }
+    </style>
+</head>
+<body class="bg-apple-gray6 text-gray-900 min-h-screen flex flex-col">
+    <header class="bg-apple-blue text-white shadow-md">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="crown-icon.svg" alt="Crown Icon" class="w-10 h-10 mr-3" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 24 24%22%3E%3Cpath fill%3D%22%23FFCC00%22 d%3D%22M12 1L9 9 2 6l3 8-3 8h20l-3-8 3-8-7 3-3-8z%22%2F%3E%3C%2Fsvg%3E'">
+                <div>
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">Kill The King</h1>
+                    <p class="text-sm md:text-base opacity-80">Defeat the tyrant, save the kingdom</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="flex space-x-4 text-sm md:text-base">
+                    <li><a href="#game" class="hover:text-apple-yellow transition-colors">Play Now</a></li>
+                    <li><a href="#about" class="hover:text-apple-yellow transition-colors">About</a></li>
+                    <li><a href="#instructions" class="hover:text-apple-yellow transition-colors">How to Play</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-apple-red mb-2">Royal Challenge Awaits</h2>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto">Test your reflexes and strategy as you battle to overthrow the tyrannical King of Trost in this fast-paced action game.</p>
+            </div>
+            
+            <div id="game" class="game-container w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-2xl border-4 border-apple-blue">
+                <iframe 
+                    src="https://game.haiyong.site/kill-the-king.html" 
+                    class="w-full h-full"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                    loading="lazy"
+                    title="Kill The King Game"></iframe>
+            </div>
+            
+            <div class="mt-4 text-center">
+                <a href="#game" class="inline-block px-6 py-3 bg-apple-red text-white rounded-full font-bold hover:bg-red-600 transform hover:scale-105 transition-all animate-pulse">
+                    PLAY NOW
+                </a>
+            </div>
+        </section>
+        
+        <section id="about" class="mb-12 bg-white rounded-xl p-6 shadow-md">
+            <h2 class="text-2xl md:text-3xl font-bold text-apple-indigo mb-4">About Kill The King</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p class="mb-4 text-gray-700">Kill The King is an intense battle game where you must use your wit and reflexes to overthrow the cruel King of Trost. By mastering different skills and upgrading your character, you'll work your way through challenging stages until the final confrontation.</p>
+                    <p class="mb-4 text-gray-700">Each battle tests your abilities in a different way, requiring strategy and quick thinking to progress. Collect experience points and gold to enhance your character's attributes and unlock powerful new abilities.</p>
+                </div>
+                <div class="bg-apple-gray5 rounded-lg p-4 text-gray-800">
+                    <h3 class="font-bold text-xl mb-2 text-apple-purple">Game Features:</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Multiple challenging stages with increasing difficulty</li>
+                        <li>Character progression system with upgradeable skills</li>
+                        <li>Real-time combat requiring quick reflexes</li>
+                        <li>Strategic resource management</li>
+                        <li>Epic boss battles including the final showdown with the King</li>
+                        <li>Track your progress with experience points and achievements</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="instructions" class="mb-12 bg-white rounded-xl p-6 shadow-md">
+            <h2 class="text-2xl md:text-3xl font-bold text-apple-green mb-4">How to Play</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-apple-gray6 p-4 rounded-lg border border-apple-gray4">
+                    <h3 class="font-bold text-lg text-apple-blue mb-2">Controls</h3>
+                    <p>Use the space bar to attack during combat. Timing is crucial - press at the right moment to deliver maximum damage to your opponents.</p>
+                </div>
+                <div class="bg-apple-gray6 p-4 rounded-lg border border-apple-gray4">
+                    <h3 class="font-bold text-lg text-apple-blue mb-2">Character Development</h3>
+                    <p>Spend your earned XP to increase your strength, intelligence, and speed. These stats will determine your effectiveness in battle.</p>
+                </div>
+                <div class="bg-apple-gray6 p-4 rounded-lg border border-apple-gray4">
+                    <h3 class="font-bold text-lg text-apple-blue mb-2">Skills & Upgrades</h3>
+                    <p>Unlock new abilities and upgrade existing ones to become more powerful. Balance your build to match your playstyle.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-apple-orange mb-6 text-center">Ready to Challenge the King?</h2>
+            <div class="text-center">
+                <a href="#game" class="inline-block px-8 py-4 bg-apple-blue text-white rounded-full font-bold hover:bg-blue-600 transform hover:scale-105 transition-all shadow-lg">
+                    Start Your Adventure Now
+                </a>
+                <p class="mt-4 text-gray-600">No downloads required. Play directly in your browser.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-xl font-bold mb-2">Kill The King</h2>
+                    <p class="text-sm text-gray-400">© 2023 杀死国王.online. All rights reserved.</p>
+                </div>
+                <div>
+                    <ul class="flex space-x-6">
+                        <li><a href="#" class="hover:text-apple-blue transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-apple-blue transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-apple-blue transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll to section functionality
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
